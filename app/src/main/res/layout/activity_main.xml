@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/Background"
+    android:background="@drawable/background"
     tools:context=".MainActivity">
 
     <EditText
@@ -66,6 +66,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="12dp"
         android:background="@drawable/submitbutton"
+        android:onClick="comparator"
         android:text="Submit"
         android:textColor="#FAF6F6"
         android:textSize="36sp"
@@ -77,8 +78,8 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="369dp"
-        android:layout_height="428dp"
+        android:layout_width="371dp"
+        android:layout_height="171dp"
         android:background="#C93B0572"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -93,7 +94,7 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="368dp"
-        android:layout_height="429dp"
+        android:layout_height="169dp"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

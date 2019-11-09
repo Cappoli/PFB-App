@@ -3,6 +3,8 @@ package com.example.picofirmibagel;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,6 +29,10 @@ public class MainActivity extends AppCompatActivity {
     String firmi = "Firmi";
     String bagel = "Bagel";
 
+    EditText inputA;
+    EditText inputB;
+    EditText inputC;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void comparator() {
+    public void comparator(View view) {
 
         firmiYes = false;
         picoYes = false;
