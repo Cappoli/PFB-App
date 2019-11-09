@@ -53,6 +53,12 @@ public class MainActivity extends AppCompatActivity {
         firmiYes = false;
         picoYes = false;
 
+        //check that all three digits have been guessed
+        //any digit the was not entered is equal to 0
+
+        //Equate guessA to value of inputA
+        //Equate guessB to value of inputB
+        //Equate guessC to value of inputC
 
         if (guessA == a || guessB == b || guessC == c) {
             firmiYes = true;
@@ -60,6 +66,9 @@ public class MainActivity extends AppCompatActivity {
         if (guessA == b || guessA == c || guessB == a || guessB == c || guessC == a || guessC == b) {
             picoYes = true;
         }
+
+        //Post both guess and results to the text view within the scroller
+        //clear the previous guess
 
     }
 }
