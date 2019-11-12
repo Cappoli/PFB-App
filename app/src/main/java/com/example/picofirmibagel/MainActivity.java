@@ -21,9 +21,9 @@ public class MainActivity extends AppCompatActivity {
     boolean picoYes;
     boolean firmiYes;
 
-    String outcomeA;
-    String outcomeB;
-    String outcomeC;
+    String inA;
+    String inB;
+    String inC;
 
     String pico = "Pico";
     String firmi = "Firmi";
@@ -46,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
         b = (int) (Math.random() * (10));
         c = (int) (Math.random() * (10));
 
+        System.out.println("A: " + a + "B: " + b + "C: " + c);
+
     }
 
     public void comparator(View view) {
@@ -57,8 +59,19 @@ public class MainActivity extends AppCompatActivity {
         //any digit the was not entered is equal to 0
 
         //Equate guessA to value of inputA
+        inputA = findViewById(R.id.editText5);
+        inA = inputA.getText().toString();
+        guessA = Integer.parseInt(inA);
+
         //Equate guessB to value of inputB
+        inputB = findViewById(R.id.editText2);
+        inB = inputB.getText().toString();
+        guessB = Integer.parseInt(inB);
+
         //Equate guessC to value of inputC
+        inputC = findViewById(R.id.editText4);
+        inC = inputC.getText().toString();
+        guessC = Integer.parseInt(inC);
 
         if (guessA == a || guessB == b || guessC == c) {
             firmiYes = true;
@@ -66,6 +79,8 @@ public class MainActivity extends AppCompatActivity {
         if (guessA == b || guessA == c || guessB == a || guessB == c || guessC == a || guessC == b) {
             picoYes = true;
         }
+
+        System.out.println("Pico: " + picoYes + "Firmi: " + firmiYes);
 
         //Post both guess and results to the text view within the scroller
         //clear the previous guess
