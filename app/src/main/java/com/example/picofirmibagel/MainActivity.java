@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void randomNumbers() {
+    public void randomNumbers(View view) {
 
         a = (int) (Math.random() * (10));
         b = (int) (Math.random() * (10));
