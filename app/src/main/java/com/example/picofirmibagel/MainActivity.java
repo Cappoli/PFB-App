@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         b = (int) (Math.random() * (10));
         c = (int) (Math.random() * (10));
 
-        System.out.println("A: " + a + "B: " + b + "C: " + c);
+        System.out.println("A: " + a + "    B: " + b + "    C: " + c);
 
     }
 
@@ -73,9 +73,13 @@ public class MainActivity extends AppCompatActivity {
         inC = inputC.getText().toString();
         guessC = Integer.parseInt(inC);
 
-        if (guessA == a || guessB == b || guessC == c) {
+        if(guessA == a && guessB == b && guessC == c) {
+            System.out.println("WINNER!!!");
+        }
+        else {if (guessA == a || guessB == b || guessC == c) {
             firmiYes = true;
         }
+
         if (guessA == b || guessA == c || guessB == a || guessB == c || guessC == a || guessC == b) {
             picoYes = true;
         }
@@ -85,5 +89,6 @@ public class MainActivity extends AppCompatActivity {
         //Post both guess and results to the text view within the scroller
         //clear the previous guess
 
+    }
     }
 }
