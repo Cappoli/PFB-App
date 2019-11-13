@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         b = (int) (Math.random() * (10));
         c = (int) (Math.random() * (10));
 
-        System.out.println("A: " + a + "    B: " + b + "    C: " + c);
+        System.out.println(" A: " + a + " B: " + b + " C: " + c);
 
     }
 
@@ -84,7 +84,15 @@ public class MainActivity extends AppCompatActivity {
             picoYes = true;
         }
 
-        System.out.println("Pico: " + picoYes + "Firmi: " + firmiYes);
+        if(picoYes == false && firmiYes == false){
+            System.out.println("Bagel");
+        }
+        if (picoYes){
+            System.out.println("Pico!");
+        }
+        if (firmiYes){
+            System.out.println("Firmi");
+        }
 
         //Post both guess and results to the text view within the scroller
         //clear the previous guess
