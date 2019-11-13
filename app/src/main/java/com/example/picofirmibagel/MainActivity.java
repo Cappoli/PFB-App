@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
             picoYes = true;
         }
 
-        if(picoYes == false && firmiYes == false){
+        if(!picoYes && !firmiYes){
             System.out.println("Bagel");
         }
         if (picoYes){
