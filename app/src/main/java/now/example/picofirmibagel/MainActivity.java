@@ -1,4 +1,4 @@
-package com.example.picofirmibagel;
+package now.example.picofirmibagel;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.example.picofirmibagel.R;
 
 public class MainActivity extends AppCompatActivity {
 
