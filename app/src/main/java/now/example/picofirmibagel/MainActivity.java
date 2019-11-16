@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import now.game.picofirmibagel.R;
 
 public class MainActivity extends AppCompatActivity {
 

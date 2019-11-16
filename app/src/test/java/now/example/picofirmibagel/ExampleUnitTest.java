@@ -1,4 +1,4 @@
-package com.example.picofirmibagel;
+package now.example.picofirmibagel;
 
 import org.junit.Test;
 
